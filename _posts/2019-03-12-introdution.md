@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: Introdution
+subtitle: Introdution
+date: '2019-03-12'
 ---
 ## giới thiệu về machine Learning
 
