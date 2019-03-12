@@ -5,10 +5,11 @@ title: Introdution
 subtitle: Introdution
 date: '2019-03-12'
 ---
-## giới thiệu về machine Learning
+### giới thiệu về machine Learning
 
-rất sơ sài, sẽ update sau.
+#### rất sơ sài, sẽ update sau.
 
+$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$
 
 Trong phần này mình có học được 2 khái niệm cơ bản:
 1. **Supervised Learning (Học có giám sát)**: Supervised learning là thuật toán dự đoán đầu ra (outcome) của một dữ liệu mới (new input) dựa trên các cặp (input, outcome) đã biết từ trước. Cặp dữ liệu này còn được gọi là (data, label), tức (dữ liệu, nhãn). Supervised learning là nhóm phổ biến nhất trong các thuật toán Machine Learning.
