@@ -22,8 +22,8 @@ description: A blog to record my course
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-navbar-links:
-  About Me: "Hoang Duc Viet"
+#navbar-links:
+  #About Me: "Hoang Duc Viet"
   #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -73,7 +73,7 @@ author:
 social-network-links:
   rss: true
   email: "ducviet.k63CShust@gmail.com"
-  facebook: https://www.facebook.com/ducviet.csk63hust
+  facebook: ducviet.csk63hust
   github: ducviet00
   
 #  reddit: yourname
@@ -156,7 +156,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+#timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
