@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Learning ML
+title: SuperDuck
 
 # Short description of your site
-description: A blog to record my course
+description: Welcome to my blog
 
 # --- Navigation bar options --- #
 
@@ -82,7 +82,7 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+#  instagram: _ducviet00
 #  youtube: user/deanat78
   spotify: rttcejfp8iho60tzdee03mb76
 #  telephone: +14159998888
