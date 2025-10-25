@@ -3,5 +3,5 @@
 ---
 
 @import
-  "minima/skins/gruvbox",
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
