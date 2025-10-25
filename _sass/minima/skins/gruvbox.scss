@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+// Gruvbox skin
+// ==============
+
+// This style sheet implements three options for the minima.skin setting:
+// "gruvbox-light" for light mode, "gruvbox-dark" for dark mode, and
+// "gruvbox" for light or dark mode depending on user preference.
+$gruvbox-is-auto: true !default;
+$gruvbox-is-dark: false !default;
+
+
+// Color scheme
+// ------------
+// The inline comments show the canonical L*a*b values for each color.
+//
+// Some colors were altered from the canonical scheme to comply with
+// WCAG-contrast criteria between foreground and background colors.
+
+$gruvbox-bg0:         #fbf1c7;
+$gruvbox-bg0_s:       #f2e5bc;
+$gruvbox-bg1:         #ebdbb2;
+$gruvbox-bg2:         #d5c4a1;
+$gruvbox-bg3:         #bdae93;
+$gruvbox-bg4:         #a89984;
+$gruvbox-grey:        #928374;
+$gruvbox-fg0:         #282828;
+$gruvbox-fg1:         #3c3836;
+$gruvbox-fg2:         #504945;
+$gruvbox-fg3:         #665c54;
+$gruvbox-fg4:         #7c6f64;
+$gruvbox-red1:        #cc241d;
+$gruvbox-red2:        #9d0006;
+$gruvbox-green1:      #98971a;
+$gruvbox-green2:      #79740e;
+$gruvbox-yellow1:     #d79921;
+$gruvbox-yellow2:     #b57614;
+$gruvbox-blue1:       #458588;
+$gruvbox-blue2:       #076678;
+$gruvbox-purple1:     #b16286;
+$gruvbox-purple2:     #8f3f71;
+$gruvbox-aqua1:       #689d6a;
+$gruvbox-aqua2:       #427b58;
+$gruvbox-orange1:     #d65d0e;
+$gruvbox-orange2:     #af3a03;
+$gruvbox-white:       #ebdbb2;
+
+
+// Minima color variables
+// ----------------------
+
+$brand-color:           $gruvbox-fg0      !default;
+$brand-color-light:     $gruvbox-fg1      !default;
+$brand-color-dimmed:    $gruvbox-fg0      !default;
+$brand-color-dark:      $gruvbox-fg4      !default;
+
+$site-title-color:      $gruvbox-orange1  !default;
+
+$heading-color:         $gruvbox-fg0      !default;
+$text-color:            $gruvbox-fg0      !default;
+$background-color:      $gruvbox-bg0      !default;
+$code-background-color: $gruvbox-bg0_s    !default;
+
+$link-base-color:       $gruvbox-blue1    !default;
+$link-visited-color:    $gruvbox-blue2    !default;
+$link-hover-color:      $gruvbox-yellow1  !default;
+
+$border-color-01:       $gruvbox-aqua2    !default;
+$border-color-02:       $gruvbox-aqua2    !default;
+$border-color-03:       $gruvbox-bg0      !default;
+
+$table-text-color:      $gruvbox-fg0      !default;
+$table-zebra-color:     $gruvbox-bg0_s    !default;
+$table-header-bg-color: $gruvbox-bg0      !default;
+$table-header-border:   $gruvbox-bg0      !default;
+$table-border-color:    $gruvbox-bg0      !default;
+
+
+// Syntax highlighting styles
+// --------------------------
+
+.highlight {
+  .hll { color: $gruvbox-red2; font-weight: bold }
+  .c { color: $gruvbox-grey; font-style: italic } /* Comment */
+  .err { color: $gruvbox-fg1 } /* Error */
+  .esc { color: $gruvbox-fg1 } /* Escape */
+  .g { color: $gruvbox-fg1 } /* Generic */
+  .k { color: $gruvbox-orange2 } /* Keyword */
+  .l { color: $gruvbox-fg1 } /* Literal */
+  .n { color: $gruvbox-fg1 } /* Name */
+  .o { color: $gruvbox-orange2 } /* Operator */
+  .x { color: $gruvbox-fg1 } /* Other */
+  .p { color: $gruvbox-fg1 } /* Punctuation */
+  .ch { color: $gruvbox-grey; font-style: italic } /* Comment.Hashbang */
+  .cm { color: $gruvbox-grey; font-style: italic } /* Comment.Multiline */
+  .cp { color: $gruvbox-aqua2 } /* Comment.Preproc */
+  .c1 { color: $gruvbox-grey; font-style: italic } /* Comment.Single */
+  .cs { color: $gruvbox-grey; font-style: italic } /* Comment.Special */
+  .gd { color: $gruvbox-bg0; background-color: $gruvbox-red2 } /* Generic.Deleted */
+  .ge { color: $gruvbox-blue2; text-decoration: underline } /* Generic.Emph */
+  .gr { color: $gruvbox-fg1; font-weight: bold; background-color: $gruvbox-red2 } /* Generic.Error */
+  .gh { color: $gruvbox-green2; font-weight: bold } /* Generic.Heading */
+  .gi { color: $gruvbox-bg0; background-color: $gruvbox-green2 } /* Generic.Inserted */
+  .go { color: $gruvbox-bg2 } /* Generic.Output */
+  .gp { color: $gruvbox-fg1 } /* Generic.Prompt */
+  .gs { color: $gruvbox-fg1 } /* Generic.Strong */
+  .gu { color: $gruvbox-green2; font-weight: bold } /* Generic.Subheading */
+  .gt { color: $gruvbox-fg1; font-weight: bold; background-color: $gruvbox-red2 } /* Generic.Traceback */
+  .kc { color: $gruvbox-orange2 } /* Keyword.Constant */
+  .kd { color: $gruvbox-orange2 } /* Keyword.Declaration */
+  .kn { color: $gruvbox-orange2 } /* Keyword.Namespace */
+  .kp { color: $gruvbox-orange2 } /* Keyword.Pseudo */
+  .kr { color: $gruvbox-orange2 } /* Keyword.Reserved */
+  .kt { color: $gruvbox-yellow2 } /* Keyword.Type */
+  .ld { color: $gruvbox-fg1 } /* Literal.Date */
+  .m { color: $gruvbox-purple2 } /* Literal.Number */
+  .s { color: $gruvbox-green2 } /* Literal.String */
+  .na { color: $gruvbox-green2; font-weight: bold } /* Name.Attribute */
+  .nb { color: $gruvbox-yellow2 } /* Name.Builtin */
+  .nc { color: $gruvbox-fg1 } /* Name.Class */
+  .no { color: $gruvbox-purple2 } /* Name.Constant */
+  .nd { color: $gruvbox-fg1 } /* Name.Decorator */
+  .ni { color: $gruvbox-yellow2 } /* Name.Entity */
+  .ne { color: $gruvbox-red2 } /* Name.Exception */
+  .nf { color: $gruvbox-yellow2 } /* Name.Function */
+  .nl { color: $gruvbox-red2 } /* Name.Label */
+  .nn { color: $gruvbox-fg1 } /* Name.Namespace */
+  .nx { color: $gruvbox-fg1 } /* Name.Other */
+  .py { color: $gruvbox-fg1 } /* Name.Property */
+  .nt { color: $gruvbox-red2 } /* Name.Tag */
+  .nv { color: $gruvbox-fg1 } /* Name.Variable */
+  .ow { color: $gruvbox-orange2 } /* Operator.Word */
+  .w { color: $gruvbox-fg1 } /* Text.Whitespace */
+  .mb { color: $gruvbox-purple2 } /* Literal.Number.Bin */
+  .mf { color: $gruvbox-purple2 } /* Literal.Number.Float */
+  .mh { color: $gruvbox-purple2 } /* Literal.Number.Hex */
+  .mi { color: $gruvbox-purple2 } /* Literal.Number.Integer */
+  .mo { color: $gruvbox-purple2 } /* Literal.Number.Oct */
+  .sb { color: $gruvbox-green2 } /* Literal.String.Backtick */
+  .sc { color: $gruvbox-green2 } /* Literal.String.Char */
+  .sd { color: $gruvbox-green2 } /* Literal.String.Doc */
+  .s2 { color: $gruvbox-green2 } /* Literal.String.Double */
+  .se { color: $gruvbox-green2 } /* Literal.String.Escape */
+  .sh { color: $gruvbox-green2 } /* Literal.String.Heredoc */
+  .si { color: $gruvbox-green2 } /* Literal.String.Interpol */
+  .sx { color: $gruvbox-green2 } /* Literal.String.Other */
+  .sr { color: $gruvbox-green2 } /* Literal.String.Regex */
+  .s1 { color: $gruvbox-green2 } /* Literal.String.Single */
+  .ss { color: $gruvbox-blue2 } /* Literal.String.Symbol */
+  .bp { color: $gruvbox-yellow2 } /* Name.Builtin.Pseudo */
+  .vc { color: $gruvbox-fg1 } /* Name.Variable.Class */
+  .vg { color: $gruvbox-fg1 } /* Name.Variable.Global */
+  .vi { color: $gruvbox-fg1 } /* Name.Variable.Instance */
+  .il { color: $gruvbox-purple2 } /* Literal.Number.Integer.Long */
+}
