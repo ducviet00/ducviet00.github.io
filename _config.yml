@@ -24,6 +24,8 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 
+google_analytics: G-L3M6RV8LN0
+
 minima:
   skin: gruvbox
   
